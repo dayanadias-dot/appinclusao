@@ -84,12 +84,21 @@ export interface LearningGoal {
   updatedAt: string;
 }
 
+export interface AttachedDocument {
+  name: string;
+  size: number;
+  type: string;
+  dataUrl?: string;
+  extractedText?: string;
+}
+
 export interface ActivityAdaptationPlan {
   id: string;
   studentId: string;
   activityTitle: string;
   subject: string;
   originalObjective: string;
+  attachedFile?: AttachedDocument;
   supportLevel: SupportLevel;
   duaRepresentation: string[]; // Múltiplas formas de Apresentação
   duaActionExpression: string[]; // Múltiplas formas de Resposta e Ação
@@ -97,6 +106,24 @@ export interface ActivityAdaptationPlan {
   sensoryAccommodations: string[]; // Fones, iluminação, descanso
   timeAndPacing: string; // Ex: 50% mais tempo, pausas a cada 15 min
   adaptedEvaluationCriteria: string; // Como pontuar com equidade
+  createdAt: string;
+}
+
+export interface IndividualizedBehaviorConsultation {
+  id: string;
+  studentId?: string;
+  studentName: string;
+  neurotypes: NeurotypeCategory[];
+  supportLevel: SupportLevel;
+  specificBehavior: string;
+  context: string;
+  intensity: 'mild' | 'moderate' | 'severe';
+  immediateDeescalationSteps: string[];
+  pedagogicalAccommodation: string[];
+  psychoemotionalHandling: string[];
+  socialPeerMediation: string[];
+  whatNeverToDo: string[];
+  preventiveRoutineAdjustments: string[];
   createdAt: string;
 }
 

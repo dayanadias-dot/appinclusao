@@ -82,7 +82,7 @@ export const AnimatedEntranceHall: React.FC<AnimatedEntranceHallProps> = ({
             </h1>
 
             <p className="text-slate-200 text-base md:text-lg max-w-xl leading-relaxed">
-              Bem-vindo ao <strong>Inclui+</strong>. Seu ambiente integrado para monitoramento do desenvolvimento acadêmico, regulação socioemocional, elaboração do PEI, adaptação curricular com DUA e observação pedagógica qualificada.
+              Bem-vindo ao <strong className="text-amber-300">AcolheMente 🎈</strong>. Seu cantinho afetuoso e integrado para monitoramento do desenvolvimento acadêmico, regulação socioemocional, elaboração do PEI, adaptação curricular com anexos de documentos e manejo individualizado de comportamentos.
             </p>
 
             {/* Quick launch action buttons */}

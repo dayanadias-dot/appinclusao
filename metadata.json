@@ -1,6 +1,6 @@
 {
-  "name": "Inclui+ | Pedagogia & Neurodiversidade Escolar",
-  "description": "Sistema de monitoramento acadêmico e emocional, relatórios diários de comportamento, metas pedagógicas individualizadas (PEI), adaptação de atividades por nível de suporte e guia de manejos para inclusão escolar.",
+  "name": "AcolheMente 🎈 | Cantinho da Inclusão & Neurodiversidade",
+  "description": "Plataforma afetuosa e colorida de pedagogia inclusiva com adaptação de atividades via anexo de documentos, geração de manejos individualizados de comportamento, PEI e diário de bordo offline.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

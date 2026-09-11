@@ -201,20 +201,20 @@ export default function App() {
               onClick={() => setActiveTab('entrance')}
               className="flex items-center gap-3 cursor-pointer group"
             >
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-600 via-purple-600 to-rose-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition">
-                <span className="text-xl font-black">♾️</span>
+              <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-pink-500 via-purple-500 to-amber-400 flex items-center justify-center text-white shadow-md shadow-pink-500/20 group-hover:scale-105 transition">
+                <span className="text-2xl font-black">🎈</span>
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <span className="text-lg font-black tracking-tight text-slate-900">
-                    Inclui<span className="text-indigo-600">+</span>
+                  <span className="text-xl font-black tracking-tight bg-gradient-to-r from-purple-700 via-pink-600 to-amber-600 bg-clip-text text-transparent">
+                    AcolheMente
                   </span>
-                  <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200/60">
-                    Pedagogia Inclusiva
+                  <span className="text-[10px] font-extrabold tracking-wider px-2.5 py-0.5 rounded-full bg-pink-50 text-pink-700 border border-pink-200">
+                    🌈 Inclusão com Afeto
                   </span>
                 </div>
-                <p className="text-[11px] text-slate-500 hidden sm:block">
-                  Apoio ao AEE, PEI e Desenho Universal para a Aprendizagem
+                <p className="text-[11px] text-slate-500 hidden sm:block font-medium">
+                  Cantinho da Pedagogia Inclusiva, PEI, DUA e Manejo
                 </p>
               </div>
             </div>
@@ -377,7 +377,7 @@ export default function App() {
           />
         )}
 
-        {activeTab === 'guide' && <PedagogicalGuideView />}
+        {activeTab === 'guide' && <PedagogicalGuideView students={students} />}
 
         {activeTab === 'settings' && (
           <SettingsView
