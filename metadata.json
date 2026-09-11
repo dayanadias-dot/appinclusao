@@ -1,0 +1,6 @@
+{
+  "name": "Inclui+ | Pedagogia & Neurodiversidade Escolar",
+  "description": "Sistema de monitoramento acadêmico e emocional, relatórios diários de comportamento, metas pedagógicas individualizadas (PEI), adaptação de atividades por nível de suporte e guia de manejos para inclusão escolar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

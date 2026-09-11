@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Lexend', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+/* Accessibility classes for neurodiverse readability */
+.font-dyslexic {
+  font-family: 'Lexend', system-ui, sans-serif !important;
+  letter-spacing: 0.04em !important;
+  word-spacing: 0.12em !important;
+  line-height: 1.8 !important;
+}
+
+/* High contrast support */
+.high-contrast {
+  filter: contrast(115%);
+}
+
+/* Print styles for pedagogical reports */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
